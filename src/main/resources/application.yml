@@ -29,4 +29,4 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: ${SVC_DISCOVERY:http://user:password@localhost:9091/eureka/}
+      defaultZone: ${SVC_DISCOVERY:http://user:password@${SERVER_URL:localhost}:9091/eureka/}
