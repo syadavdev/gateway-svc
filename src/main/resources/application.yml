@@ -14,6 +14,10 @@ zuul:
       path: /message/**
       serviceId: message-svc
       sensitive-headers:
+    authorization-svc:
+      path: /authorization/**
+      serviceId: authorization-svc
+      sensitive-headers:
 ribbon:
   ConnectTimeout: 3000
   ReadTimeout: 10000
